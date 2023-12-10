@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guitar Choice Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+<h1 id="title">Guitar Choice Survey Form</h1>
+<p id="description">Thank you for taking the time to complete this short survey surrounding your guitar preferences!</p>
+  <fieldset>
+<form id="survery-form">
+  <Label class="block" for="name-label">*Full Name:
+    <input placeholder="type full name here" id="name" type="text" class="spacing" required></Label>
+    <Label class="block" for="email-label">*Email Address:
+    <input placeholder="type email here" id="email" type="email" required class="spacing"></Label>
+    <Label for="number-label" class="block">*Phone Number:
+    <input class="spacing" min="1000000000" max="100000000000" placeholder="type phone number here" id="number" type="number" ></Label>
+    <p class="italics">*required</p>
+    </fieldset>
+<fieldset>
+  <p>Do you play acoustic guitar or electric guitar more often?</p>
+<label for="electric">
+<input id="electric" type="radio" name="guitar-type" class="inline" checked /> 
+<label for="electric">
+  Electric</label>
+  <label for="acoustic"><input id="acoustic" type="radio" name="guitar-type" class="inline" /> Acoustic</label>
+<p for="dropdown">
+  Which guitar brand is your favourite?</p><select id="dropdown" class="spacing">
+  </p>
+    <option value="">(select one)</option>
+            <option value="1">Gibson</option>
+            <option value="2">Fender</option>
+            <option value="3">PRS</option>
+            <option value="4">Other</option>
+            </select>
+  <p>Which of the following do you own?</p>
+  <label class="checkbox"> 
+    <input type="checkbox" name="item1" value="value1">
+    Fender Telecaster
+  </label>
+
+  <label class="checkbox">
+    <input type="checkbox" name="item2" value="value2" >
+    Fender Stratocaster
+  </label>
+
+  <label class="checkbox">
+    <input type="checkbox" name="item3" value="value3" >
+   Gibson Les Paul
+  </label>
+   <label class="checkbox"> 
+    <input type="checkbox" name="item1" value="value1">
+    Gibson SG
+  </label>
+   <label class="checkbox"> 
+    <input type="checkbox" name="item1" value="value1">
+    PRS
+  </label>
+   <label class="checkbox"> 
+    <input type="checkbox" name="item1" value="value1">
+    Ibanez
+  </label>
+   <label class="checkbox"> 
+    <input type="checkbox" name="item1" value="value1">
+    Charvel
+  </label>
+   <label class="checkbox"> 
+    <input type="checkbox" name="item1" value="value1">
+    Jackson
+  </label>
+  <p class='two'> What would you say is the most important thing to you when buying a new guitar?</p>
+    <textarea id="bio" name="bio" rows="3" cols="30" placeholder="500 words max"></textarea>
+ </fieldset>
+ <input type="submit" value="Submit" />
+
+  
+  </body>
